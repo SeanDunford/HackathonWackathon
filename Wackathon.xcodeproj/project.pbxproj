@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47F644E51A11BA9D00B9B135 /* M7Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F644E41A11BA9D00B9B135 /* M7Model.swift */; };
 		8C39930A48DE2DF029047936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C399C2C8DE2A4D35E5F4EE7 /* Main.storyboard */; };
 		8C3993AE4E421897E2172E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3992493C169FEA29F790EE /* AppDelegate.swift */; };
-		8C3996B9851CD091FC41A3ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C399036DA32709239CCEBB1 /* ViewController.swift */; };
+		8C39944AE6DCF580F1B14AE2 /* M7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C399159675E0AC97D2B07D6 /* M7ViewController.swift */; };
 		8C3998D1CF507188614007E8 /* WackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3994E642D3D5521ECABEB2 /* WackathonTests.swift */; };
 		8C399A461E26EB6FD55B2C02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C399DE8A8AAC03E889E825E /* LaunchScreen.xib */; };
 		8C399FD007A12402E9F7F9CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3996DB9D53903AE7568465 /* Images.xcassets */; };
@@ -26,7 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8C399036DA32709239CCEBB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47F644E41A11BA9D00B9B135 /* M7Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M7Model.swift; sourceTree = "<group>"; };
+		8C399159675E0AC97D2B07D6 /* M7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M7ViewController.swift; sourceTree = "<group>"; };
 		8C39915BAE55B0888E7B62AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		8C3992493C169FEA29F790EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C3994E642D3D5521ECABEB2 /* WackathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WackathonTests.swift; sourceTree = "<group>"; };
@@ -56,6 +58,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47F644E21A11BA6D00B9B135 /* M7 */ = {
+			isa = PBXGroup;
+			children = (
+				8C399159675E0AC97D2B07D6 /* M7ViewController.swift */,
+			);
+			name = M7;
+			sourceTree = "<group>";
+		};
+		47F644E31A11BA8100B9B135 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47F644E41A11BA9D00B9B135 /* M7Model.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		8C3990FEFB6BB280BA94EE20 /* WackathonTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +101,14 @@
 			);
 			sourceTree = "<group>";
 		};
+		8C3999184E96452B43CCA5ED /* AppPages */ = {
+			isa = PBXGroup;
+			children = (
+				47F644E21A11BA6D00B9B135 /* M7 */,
+			);
+			path = AppPages;
+			sourceTree = "<group>";
+		};
 		8C399B4DB833D6AF1BDFA337 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +126,8 @@
 				8C399DE8A8AAC03E889E825E /* LaunchScreen.xib */,
 				8C3992493C169FEA29F790EE /* AppDelegate.swift */,
 				8C399C2C8DE2A4D35E5F4EE7 /* Main.storyboard */,
-				8C399036DA32709239CCEBB1 /* ViewController.swift */,
+				47F644E31A11BA8100B9B135 /* Models */,
+				8C3999184E96452B43CCA5ED /* AppPages */,
 			);
 			path = Wackathon;
 			sourceTree = "<group>";
@@ -202,7 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C3993AE4E421897E2172E1A /* AppDelegate.swift in Sources */,
-				8C3996B9851CD091FC41A3ED /* ViewController.swift in Sources */,
+				8C39944AE6DCF580F1B14AE2 /* M7ViewController.swift in Sources */,
+				47F644E51A11BA9D00B9B135 /* M7Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +412,7 @@
 				8C39966F9288E11E059AB99F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C399933BBB35D43A4287B18 /* Build configuration list for PBXProject "Wackathon" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +430,7 @@
 				8C399CB29EC5ED950B167CB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

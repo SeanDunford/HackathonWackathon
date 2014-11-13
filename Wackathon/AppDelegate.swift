@@ -13,14 +13,21 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    
     var window: UIWindow?
-
-
-
+    var navC: UINavigationController?
+    var vc: M7ViewController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+
+        vc = M7ViewController();
+        window = UIWindow(frame: UIScreen.mainScreen().bounds);
+        navC = UINavigationController(rootViewController: vc!);
+        navC?.navigationBarHidden = true; 
+        window?.rootViewController = navC;
+        
+        
     return true
     }
 
