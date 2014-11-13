@@ -13,6 +13,7 @@
 		8C3998D1CF507188614007E8 /* WackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3994E642D3D5521ECABEB2 /* WackathonTests.swift */; };
 		8C399A461E26EB6FD55B2C02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C399DE8A8AAC03E889E825E /* LaunchScreen.xib */; };
 		8C399FD007A12402E9F7F9CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3996DB9D53903AE7568465 /* Images.xcassets */; };
+		8CFB1F881A144173006059A4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFB1F871A144173006059A4 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8C399714CD876B97E66484B6 /* Wackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C399A9CA83478CCDE0E38D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		8C399CC0650A978F21596424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8CFB1F871A144173006059A4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CFB1F881A144173006059A4 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,7 @@
 		8C3998FE7EA786394FFC2E56 = {
 			isa = PBXGroup;
 			children = (
+				8CFB1F871A144173006059A4 /* CoreMotion.framework */,
 				8C399B4DB833D6AF1BDFA337 /* Products */,
 				8C399BDFCF13B5ECE712041A /* Wackathon */,
 				8C3990FEFB6BB280BA94EE20 /* WackathonTests */,
@@ -157,6 +161,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = LuqSean;
+				TargetAttributes = {
+					8C399132133A3EC2B022E5BE = {
+						DevelopmentTeam = 86ZR44WS4J;
+					};
+				};
 			};
 			buildConfigurationList = 8C399933BBB35D43A4287B18 /* Build configuration list for PBXProject "Wackathon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -327,9 +336,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Wackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -352,9 +364,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Wackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -383,6 +398,7 @@
 				8C39966F9288E11E059AB99F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C399933BBB35D43A4287B18 /* Build configuration list for PBXProject "Wackathon" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +416,7 @@
 				8C399CB29EC5ED950B167CB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

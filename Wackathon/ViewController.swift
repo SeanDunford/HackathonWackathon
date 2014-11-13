@@ -8,6 +8,7 @@
 
 
 import UIKit
+import CoreMotion
 
 
 class ViewController: UIViewController {
@@ -15,7 +16,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+        println("f u sean")
+        println("step counting available?", CMStepCounter.isStepCountingAvailable())
+        var leCounter: CMStepCounter = CMStepCounter()
+        println("stepCounter \(leCounter)")
+        var start: NSDate = NSDate.distantPast() as NSDate
+        var to: NSDate = NSDate.distantFuture() as NSDate
+        
+        func handler(steps:Int, e: NSError!) -> Void {
+            println("handler \(steps)");
+            println("error \(e)");
+
+        }
+
+        leCounter.queryStepCountStartingFrom(start, to: to, toQueue: NSOperationQueue.mainQueue(), withHandler: handler)
     }
 
 
